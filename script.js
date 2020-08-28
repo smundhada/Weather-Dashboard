@@ -131,6 +131,21 @@ function displayWeather(data, response){
     $(".currentWeatherHumd").text("Humditiy : " + data.current.humidity + "%");
     $(".currentWeatherSpeed").text("Wind Speed : " + data.current.wind_speed + "MPH");
     $(".currentWeatheruvi").text("UV Index : " + data.current.uvi);
+ 
+    var pieColor 
+    if(parseInt(data.current.uvi) <= 2){
+        pieColor = 'rgba(142, 233, 90, 0.8)';
+    }  else if( parseInt(data.current.uvi) >= 3 && parseInt(data.current.uvi) <= 5){
+        pieColor = 'rgba(229, 233, 90, 0.8)';
+    } else if( parseInt(data.current.uvi) >= 6 && parseInt(data.current.uvi) <= 7){
+        pieColor = 'rgba(233, 170, 90, 0.8)';
+    }else if( parseInt(data.current.uvi) >= 8 && parseInt(data.current.uvi) <= 10){
+        pieColor = 'rgba(233, 90, 90, 0.8)';
+    }else{
+        pieColor = 'rgba(131, 30, 233, 0.8)';
+    }
+
+    $(".currentWeatheruvi").attr("style", "border-bottom-color: "+ pieColor +";")
 
     $("#rest-week").empty();   
 

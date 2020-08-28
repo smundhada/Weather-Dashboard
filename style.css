@@ -134,6 +134,20 @@ h10 {
     border-top-color: #D4AF37;
  }
 
+ h27{
+    font-size: 17px;
+    font-family: 'Montserrat', serif;
+    text-transform: uppercase;
+    color: black;
+    margin:auto;
+    vertical-align:middle;
+    font-weight: 100;
+    padding-top: 5px;
+    border-bottom: solid;
+    border-bottom-width: 7px;
+    border-bottom-color: #D4AF37;
+ }
+
  .currentImg{
      padding: 5px;
      filter: brightness(80%);

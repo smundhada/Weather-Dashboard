@@ -159,7 +159,7 @@ function displayWeather(data, response){
 
             $(divEl).addClass("eachDay");
             var div2El = $("<div></div>");
-            var htag1El = $("<h3> "+ resDate[0] + ' ' + resDate[1] + ' ' + resDate[2] + ' ' + resDate[3] +"</h3>");
+            var htag1El = $("<h3> "+ resDate[0] + ' ' + resDate[1] + ' ' + resDate[2] + ' </br>' + resDate[3] +"</h3>");
             $(div2El).append(htag1El);
             $(divEl).append(div2El);
 
